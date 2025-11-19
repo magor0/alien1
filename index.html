@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien1</title>
+    <style>
+        body {
+            background-color: darkgoldenrod;
+        }
+        #aliens {
+            background-color: white;
+            border: 1px solid black;
+            margin: 0px auto;
+            width: 300px;
+            padding: 10px;
+        }
+    </style>
+    <script>
+
+        function setKep(id, kep) {
+            document.getElementById(id).src = kep;
+        }
+
+    </script>
+</head>
+<body>
+    
+    <div id="aliens">
+        <img id="kep1" src="alien1.png" onmouseover="setKep('kep1', 'alien2.png');" onmouseleave="setKep('kep1', 'alien1.png');">
+        <img id="kep2" src="alien2.png" onmouseover="setKep('kep2', 'alien3.png');" onmouseleave="setKep('kep2', 'alien2.png');">
+        <img id="kep3" src="alien3.png" onmouseover="setKep('kep3', 'alien4.png');" onmouseleave="setKep('kep3', 'alien3.png');">
+    </div>
+
+</body>
+</html>
